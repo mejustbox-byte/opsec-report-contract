@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools==84.0.0", "wheel==0.48.0"]
+build-backend = "setuptools.build_meta"
+[project]
+name = "opsec-report-contract"
+version = "0.1.0a1"
+description = "Offline versioned OPSEC reports, coverage-aware diff and safe static HTML"
+readme = "README.md"
+requires-python = ">=3.12"
+license = "MIT"
+license-files = ["LICENSE"]
+dependencies = ["attrs==26.1.0", "jsonschema==4.26.0", "jsonschema-specifications==2025.9.1", "referencing==0.37.0", "rpds-py==2026.9.1", "typing_extensions==4.16.0"]
+[project.scripts]
+opsec-report = "opsec_reports.cli:main"
+[tool.setuptools]
+packages = ["opsec_reports"]
+[tool.setuptools.package-data]
+opsec_reports = ["*.json"]

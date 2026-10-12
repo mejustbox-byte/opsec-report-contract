@@ -1,0 +1,11 @@
+{
+  "product_version": "0.1.0a1",
+  "contract": "opsec-1.0",
+  "local_tests": 16,
+  "documentation_pairs": 13,
+  "environment": "Linux / Python 3.12",
+  "wheel_install_outside_checkout": "passed",
+  "hosted_ci": "not_run",
+  "public_release": "not_published",
+  "sources_synthetic": true
+}
