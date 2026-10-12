@@ -54,19 +54,19 @@ class ReportTests(unittest.TestCase):
    p=Path(tmp)/'existing';p.write_text('original');link=Path(tmp)/'link';link.symlink_to(p)
    with self.assertRaises(ReportError):load(link)
    with self.assertRaises(ReportError):write_new(p,'changed')
-   self.assertEqual(p.read_text(),'original')
+   self.assertEqual(p.read_text(encoding='utf-8'),'original')
  def test_guard_adapter_preserves_gaps_without_pass_inference(self):
-  data=json.loads((ROOT/'examples/guard-source.synthetic.json').read_text());r=guard(data,'scope','2026-10-12T00:00:00Z',True)
+  data=json.loads((ROOT/'examples/guard-source.synthetic.json').read_text(encoding='utf-8'));r=guard(data,'scope','2026-10-12T00:00:00Z',True)
   self.assertEqual(outcome(r),1);self.assertFalse(r['coverage_complete']);self.assertEqual(r['summary']['pass'],0)
   data['findings']=[];self.assertEqual(outcome(guard(data,'scope','2026-10-12T00:00:00Z',True)),2)
  def test_ad_actual_producer_fixture_and_unknown_mapping(self):
-  data=json.loads((ROOT/'examples/ad-source.synthetic.json').read_text());r=ad(data);self.assertEqual(r['summary']['pass'],9);self.assertEqual(outcome(r),0)
+  data=json.loads((ROOT/'examples/ad-source.synthetic.json').read_text(encoding='utf-8'));r=ad(data);self.assertEqual(r['summary']['pass'],9);self.assertEqual(outcome(r),0)
   data['results'][0].update(status='not_run',coverage='none',evidence_refs=[]);data['summary']['pass']=8;data['summary']['not_run']=1
   r=ad(data);self.assertEqual(r['summary']['not_tested'],1);self.assertEqual(outcome(r),2)
  def test_source_invalid_not_silently_accepted(self):
-  data=json.loads((ROOT/'examples/ad-source.synthetic.json').read_text());data['summary']['pass']=0
+  data=json.loads((ROOT/'examples/ad-source.synthetic.json').read_text(encoding='utf-8'));data['summary']['pass']=0
   with self.assertRaises(ReportError):ad(data)
-  data=json.loads((ROOT/'examples/guard-source.synthetic.json').read_text());data['coverage_complete']=False
+  data=json.loads((ROOT/'examples/guard-source.synthetic.json').read_text(encoding='utf-8'));data['coverage_complete']=False
   with self.assertRaises(ReportError):guard(data,'scope','2026-10-12T00:00:00Z',True)
  def test_cli_codes_and_output(self):
   with tempfile.TemporaryDirectory() as tmp:

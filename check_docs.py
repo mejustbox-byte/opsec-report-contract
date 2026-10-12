@@ -9,7 +9,7 @@ for p in [*ROOT.glob('README*.md'),*ROOT.glob('docs/*/*.md')]:
  for link in re.findall(r'\]\(([^)]+)\)',text):
   if not link.startswith(('http://','https://','#')):assert (p.parent/link).is_file(),(p,link)
 for name in ru:
- blocks=lambda lang:re.findall(r'```\w*\n(.*?)```',(ROOT/'docs'/lang/name).read_text(),re.S)
+ blocks=lambda lang:re.findall(r'```\w*\n(.*?)```',(ROOT/'docs'/lang/name).read_text(encoding='utf-8'),re.S)
  assert blocks('ru')==blocks('en'),name
 with tempfile.TemporaryDirectory() as tmp:
  def run(args,code):
@@ -17,7 +17,7 @@ with tempfile.TemporaryDirectory() as tmp:
   assert r.returncode==code,r.stdout+r.stderr
  run(['validate','examples/after.json'],0)
  out=Path(tmp)/'diff.json';run(['diff','examples/before.json','examples/after.json','--output',str(out)],0)
- assert json.loads(out.read_text())['changes'][0]['change']=='explicitly_passed'
+ assert json.loads(out.read_text(encoding='utf-8'))['changes'][0]['change']=='explicitly_passed'
  run(['html','examples/before.json','--output',str(Path(tmp)/'report.html')],1)
  run(['normalize','ad','examples/ad-source.synthetic.json','--output',str(Path(tmp)/'ad.json')],0)
  run(['normalize','guard','examples/guard-source.synthetic.json','--scope','synthetic-materials','--observed-at','2026-10-12T00:00:00Z','--synthetic','--output',str(Path(tmp)/'guard.json')],1)
