@@ -4,7 +4,7 @@
 
 A local result contract and consumer toolkit for OPSEC auditors. Explicit pass/fail/not_tested/not_applicable, strict validation and comparisons that never label a missing finding as fixed. Two inspected adapters preserve source uncertainty rather than inventing passes.
 
-**0.1.0a1 local candidate.** Hosted CI and release are pending. Producer authenticity and real infrastructure safety are not established by normalized reports.
+**0.1.0a1 alpha.** Linux, Windows and macOS CI passed on Python 3.13, including clean wheel installation outside the checkout. Producer authenticity and real infrastructure safety are not established by normalized reports.
 
 [Русский](README.ru.md) · [Handbook](docs/en/index.md) · [Install/examples](docs/en/user-guide.md) · [Contract](docs/en/contract.md) · [Adapters](docs/en/adapters.md)
 

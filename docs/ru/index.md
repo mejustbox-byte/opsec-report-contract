@@ -1,6 +1,6 @@
 # OPSEC Report Contract
 
-Локальный кандидат 0.1.0a1 · Контракт opsec-1.0 · Hosted CI/release не заявляются.
+Alpha 0.1.0a1 · Контракт opsec-1.0 · CI трёх ОС и чистая установка проверены.
 
 - [Назначение и приёмка](requirements.md)
 - [Контракт opsec-1.0](contract.md)

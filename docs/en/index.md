@@ -1,6 +1,6 @@
 # OPSEC Report Contract
 
-0.1.0a1 local candidate · Contract opsec-1.0 · No hosted CI/release claimed.
+0.1.0a1 alpha · Contract opsec-1.0 · Three-OS CI and clean installation verified.
 
 - [Purpose and acceptance](requirements.md)
 - [Contract opsec-1.0](contract.md)

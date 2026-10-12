@@ -5,7 +5,18 @@
   "documentation_pairs": 13,
   "environment": "Linux / Python 3.12",
   "wheel_install_outside_checkout": "passed",
-  "hosted_ci": "not_run",
-  "public_release": "not_published",
+  "hosted_ci": {
+    "status": "passed",
+    "run_id": 38215189151,
+    "commit": "26ee26d3d1b094e8fbfe7e717862e31faf4c7742",
+    "os": [
+      "Linux",
+      "Windows",
+      "macOS"
+    ],
+    "python": "3.13",
+    "clean_wheel_install": "passed"
+  },
+  "public_release": "artifacts_built_by_prerelease_workflow",
   "sources_synthetic": true
 }
