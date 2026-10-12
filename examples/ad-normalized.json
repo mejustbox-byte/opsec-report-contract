@@ -1,0 +1,150 @@
+{
+  "schema_version": "opsec-1.0",
+  "producer": {
+    "name": "ad-opsec-auditor",
+    "version": "0.1.0a2",
+    "ruleset": "baseline-v1"
+  },
+  "run": {
+    "id": "sha256:68f95f610b5b9516021559c792090f725a3ce6b09a645755a20cf454c1d66e7d",
+    "scope": "lab.example.test",
+    "observed_at": "2026-10-09T00:00:00Z",
+    "synthetic": true
+  },
+  "coverage_complete": true,
+  "summary": {
+    "pass": 9,
+    "fail": 0,
+    "not_tested": 0,
+    "not_applicable": 0
+  },
+  "results": [
+    {
+      "check_id": "T0-01",
+      "asset_id": "lab.example.test",
+      "status": "pass",
+      "severity": "info",
+      "message": "Status normalized from the declared source report; evidence is not authenticated.",
+      "remediation": "Review the source product remediation guidance and evidence locally.",
+      "evidence": {
+        "redacted": true,
+        "refs": [
+          "source-ref:cf884839105519756204a241e366a95bb425ce31d97b2f0778642b30cedb6f60"
+        ]
+      }
+    },
+    {
+      "check_id": "CS-01",
+      "asset_id": "lab.example.test",
+      "status": "pass",
+      "severity": "info",
+      "message": "Status normalized from the declared source report; evidence is not authenticated.",
+      "remediation": "Review the source product remediation guidance and evidence locally.",
+      "evidence": {
+        "redacted": true,
+        "refs": [
+          "source-ref:e43aef935596e82e5dd6eae0b4b4d73f2a3cf23c43150287594ac5d5d4287cc9"
+        ]
+      }
+    },
+    {
+      "check_id": "ACL-01",
+      "asset_id": "lab.example.test",
+      "status": "pass",
+      "severity": "info",
+      "message": "Status normalized from the declared source report; evidence is not authenticated.",
+      "remediation": "Review the source product remediation guidance and evidence locally.",
+      "evidence": {
+        "redacted": true,
+        "refs": [
+          "source-ref:53610847edf16db6e05e88303a1dc5b49d38e29f59e59047cb9a69dca37075e3"
+        ]
+      }
+    },
+    {
+      "check_id": "SVC-01",
+      "asset_id": "lab.example.test",
+      "status": "pass",
+      "severity": "info",
+      "message": "Status normalized from the declared source report; evidence is not authenticated.",
+      "remediation": "Review the source product remediation guidance and evidence locally.",
+      "evidence": {
+        "redacted": true,
+        "refs": [
+          "source-ref:94ff8a119f720e635a9269da73d20d266088a99368d0cb3ca09f5fb09187842b"
+        ]
+      }
+    },
+    {
+      "check_id": "NTLM-01",
+      "asset_id": "lab.example.test",
+      "status": "pass",
+      "severity": "info",
+      "message": "Status normalized from the declared source report; evidence is not authenticated.",
+      "remediation": "Review the source product remediation guidance and evidence locally.",
+      "evidence": {
+        "redacted": true,
+        "refs": [
+          "source-ref:24a9d51644c83e430b48091c9d99790eae4338353bfd134a6211d1986f791c25"
+        ]
+      }
+    },
+    {
+      "check_id": "LDAP-01",
+      "asset_id": "lab.example.test",
+      "status": "pass",
+      "severity": "info",
+      "message": "Status normalized from the declared source report; evidence is not authenticated.",
+      "remediation": "Review the source product remediation guidance and evidence locally.",
+      "evidence": {
+        "redacted": true,
+        "refs": [
+          "source-ref:e98ddba90117542ca0db3b8cccf51fc9dcedd28d26d761d967062ac8d4837700"
+        ]
+      }
+    },
+    {
+      "check_id": "SMB-01",
+      "asset_id": "lab.example.test",
+      "status": "pass",
+      "severity": "info",
+      "message": "Status normalized from the declared source report; evidence is not authenticated.",
+      "remediation": "Review the source product remediation guidance and evidence locally.",
+      "evidence": {
+        "redacted": true,
+        "refs": [
+          "source-ref:c82b2b37050125b8bd01a981c1fdd62fc117c17b06aa07ef563aa674788b87fe"
+        ]
+      }
+    },
+    {
+      "check_id": "LOG-01",
+      "asset_id": "lab.example.test",
+      "status": "pass",
+      "severity": "info",
+      "message": "Status normalized from the declared source report; evidence is not authenticated.",
+      "remediation": "Review the source product remediation guidance and evidence locally.",
+      "evidence": {
+        "redacted": true,
+        "refs": [
+          "source-ref:e58cdc87e0e9711e2ed4155d9c5f072ecaa7140b3ab0e31436a790f40ba7eeef"
+        ]
+      }
+    },
+    {
+      "check_id": "REC-01",
+      "asset_id": "lab.example.test",
+      "status": "pass",
+      "severity": "info",
+      "message": "Status normalized from the declared source report; evidence is not authenticated.",
+      "remediation": "Review the source product remediation guidance and evidence locally.",
+      "evidence": {
+        "redacted": true,
+        "refs": [
+          "source-ref:d884a0a7c19aa7d10dc5f3e4be9c4aba7807095c59757d2522c3b48c5e726756"
+        ]
+      }
+    }
+  ],
+  "coverage_gaps": []
+}

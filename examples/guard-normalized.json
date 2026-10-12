@@ -1,0 +1,99 @@
+{
+  "schema_version": "opsec-1.0",
+  "producer": {
+    "name": "publication-opsec-guard",
+    "version": "0.2.0a2",
+    "ruleset": "response-0.2-five-rules"
+  },
+  "run": {
+    "id": "local",
+    "scope": "synthetic-materials",
+    "observed_at": "2026-10-12T00:00:00Z",
+    "synthetic": true
+  },
+  "coverage_complete": false,
+  "summary": {
+    "pass": 0,
+    "fail": 5,
+    "not_tested": 0,
+    "not_applicable": 0
+  },
+  "results": [
+    {
+      "check_id": "PUB-001",
+      "asset_id": "notes.md",
+      "status": "fail",
+      "severity": "high",
+      "message": "Status normalized from the declared source report; evidence is not authenticated.",
+      "remediation": "Review the source product remediation guidance and evidence locally.",
+      "evidence": {
+        "redacted": true,
+        "refs": [
+          "line:1"
+        ]
+      }
+    },
+    {
+      "check_id": "PUB-002",
+      "asset_id": "notes.md",
+      "status": "fail",
+      "severity": "medium",
+      "message": "Status normalized from the declared source report; evidence is not authenticated.",
+      "remediation": "Review the source product remediation guidance and evidence locally.",
+      "evidence": {
+        "redacted": true,
+        "refs": [
+          "line:2"
+        ]
+      }
+    },
+    {
+      "check_id": "PUB-003",
+      "asset_id": "notes.md",
+      "status": "fail",
+      "severity": "medium",
+      "message": "Status normalized from the declared source report; evidence is not authenticated.",
+      "remediation": "Review the source product remediation guidance and evidence locally.",
+      "evidence": {
+        "redacted": true,
+        "refs": [
+          "line:3"
+        ]
+      }
+    },
+    {
+      "check_id": "PUB-004",
+      "asset_id": "notes.md",
+      "status": "fail",
+      "severity": "critical",
+      "message": "Status normalized from the declared source report; evidence is not authenticated.",
+      "remediation": "Review the source product remediation guidance and evidence locally.",
+      "evidence": {
+        "redacted": true,
+        "refs": [
+          "line:4"
+        ]
+      }
+    },
+    {
+      "check_id": "PUB-005",
+      "asset_id": "notes.md",
+      "status": "fail",
+      "severity": "high",
+      "message": "Status normalized from the declared source report; evidence is not authenticated.",
+      "remediation": "Review the source product remediation guidance and evidence locally.",
+      "evidence": {
+        "redacted": true,
+        "refs": [
+          "line:5"
+        ]
+      }
+    }
+  ],
+  "coverage_gaps": [
+    {
+      "code": "finding_only_source",
+      "message": "Source exposes findings, not explicit per-check passes; missing findings are not normalized as pass."
+    }
+  ]
+}

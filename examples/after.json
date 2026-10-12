@@ -1,0 +1,36 @@
+{
+  "schema_version": "opsec-1.0",
+  "producer": {
+    "name": "synthetic-producer",
+    "version": "1",
+    "ruleset": "baseline"
+  },
+  "run": {
+    "id": "local",
+    "scope": "synthetic-lab",
+    "observed_at": "2026-10-12T01:00:00Z",
+    "synthetic": true
+  },
+  "coverage_complete": true,
+  "summary": {
+    "pass": 1,
+    "fail": 0,
+    "not_tested": 0,
+    "not_applicable": 0
+  },
+  "results": [
+    {
+      "check_id": "CHECK-001",
+      "asset_id": "synthetic-asset",
+      "status": "pass",
+      "severity": "info",
+      "message": "Status normalized from the declared source report; evidence is not authenticated.",
+      "remediation": "Review the source product remediation guidance and evidence locally.",
+      "evidence": {
+        "redacted": true,
+        "refs": []
+      }
+    }
+  ],
+  "coverage_gaps": []
+}
